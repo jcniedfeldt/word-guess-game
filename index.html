@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Grab words from https://harrypotter.bloomsbury.com/uk/fun-stuff/glossary/ -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+
+    <title>The Wizarding World of Harry Potter</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">The Wizarding World of Harry Potter</h1>
+        <p class="lead">Welcome! Press any button to start guessing letters!</p>
+        <hr class="my-4">
+        <p>To look up the definition of a word, feel free to visit <a href="https://harrypotter.bloomsbury.com/uk/fun-stuff/glossary/">The Harry Potter Glossary by Bloomsbury</a></p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Card containing hangman picture with word to be guessed underneath -->
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Hangman-5.svg/2000px-Hangman-5.svg.png" alt="Hangman Image">
+                    <div class="card-body">
+                        <h5 class="card-title" id="word">Word Goes Here.</h5>
+                        <p class="card-text">
+                            <!-- <div id="word">
+
+                            </div> -->
+                            <div>
+                                Guesses Left: <span id="guesses"></span>
+                            </div>
+                            <div>
+                                Guessed Letters: <span id="guessedLetters"></span>
+                            </div>
+                            <div>
+                                Correct Word: <span id="correctWord"></span>
+                            </div>
+                            <div>
+                                <span id="message"></span>
+                            </div>
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+
+                <div>
+                    Player Wins: <span id="playerWins">0</span>
+                </div>
+                <div>
+                    Player Losses: <span id="playerLosses">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1></h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
